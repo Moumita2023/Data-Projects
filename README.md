@@ -41,9 +41,9 @@ To explore the Power BI dashboards, you can use the following links (if hosted p
 This repository contains all the source files, including Tableau `.twbx` files, Power BI `.pbix` files, and any data used for creating these visualizations.
 
 ### Folder Structure:
-- **tableau**: Contains all Tableau workbook files and related resources.
-- **powerbi**: Contains all Power BI report files.
-- **Python machine learning**: 
+- **Data Visualization-Tableau Dashboards**: Contains all Tableau workbook files and related resources.
+- **Data Visualization Power BI dashboards**: Contains all Power BI report files and related resources.
+- **Machine Learning & Python Projects**: Contains all python and machine learning model personal and academic projects
 
 If you have any questions, or if you'd like to collaborate or give feedback, feel free to open an issue or contact me directly!
 
