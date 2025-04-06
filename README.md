@@ -2,6 +2,15 @@
 
 Welcome to my **Data Projects** repository! This repository has all my personal data projects which includes data analysis, python, machine learning, data visualization with power BI, Tableau and EDA.
 
+## How to Use the Repository:
+
+This repository contains all the source files, including Tableau `.twbx` files, Power BI `.pbix`, 'ipynb' files, and any data used for creating these visualizations.
+
+### Folder Structure:
+- **Data Visualization-Tableau Dashboards**: Contains all Tableau workbook files and related resources.
+- **Data Visualization Power BI dashboards**: Contains all Power BI report files and related resources.
+- **Machine Learning & Python Projects**: Contains all python and machine learning model personal and academic projects
+
 ## Tableau Dashboard
 
 ### Access the Tableau Dashboard:
@@ -47,14 +56,5 @@ Here are some key insights from the Power BI Amazon sales & Revenue Dashboard:
 I believe these are some interesting insights the organization should consider to increase the Sales & Revenues.
 ---
 
-## How to Use the Repository:
-
-This repository contains all the source files, including Tableau `.twbx` files, Power BI `.pbix` files, and any data used for creating these visualizations.
-
-### Folder Structure:
-- **Data Visualization-Tableau Dashboards**: Contains all Tableau workbook files and related resources.
-- **Data Visualization Power BI dashboards**: Contains all Power BI report files and related resources.
-- **Machine Learning & Python Projects**: Contains all python and machine learning model personal and academic projects
-
-If you have any questions, or if you'd like to collaborate or give feedback, feel free to open an issue or contact me directly!
+If you have any questions, or if you'd like to collaborate or give feedback, feel free to contact me directly at LinkedIn(https://www.linkedin.com/in/patra-moumita/) or (https://www.linkedin.com/in/patra-moumita/?locale=fr_FR) or mail me at patra.mou2022@gmail.com
 
