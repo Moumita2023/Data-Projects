@@ -8,8 +8,12 @@ Welcome to my **Data Projects** repository! This repository has all my personal 
 You can explore the interactive Tableau dashboards by visiting the live site hosted on GitHub Pages:
 
 #### Access the HR Employee Attrition Tableau Dashboard:
+- Here are the dashboards available for viewing:
 
-- [Interactive Tableau Dashboard](https://moumita2023.github.io/Data-Projects/)
+- [HR Employee Attrition Dashboard](https://moumita2023.github.io/Data-Projects/)
+- [Amazon Sales & Revenue Dashboard](https://moumita2023.github.io/Data-Projects/)
+
+Click on the above links to directly view the respective dashboards.
 
 ### Insights from the Tableau Dashboard:
 Here are some key insights from the Tableau Dashboard:
@@ -27,7 +31,7 @@ Feel free to interact with the dashboard and explore the data further.
 ### Access Power BI Dashboards:
 To explore the Power BI dashboards, you can use the following links (if hosted publicly or in another accessible platform):
 
-- [Power BI Dashboard ](https://yourpowerbi1link.com)
+- 
 
 
 ---
