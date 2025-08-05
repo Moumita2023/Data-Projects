@@ -5,11 +5,13 @@ from retriever import load_and_embed
 from chatbot import get_answer
 
 st.set_page_config(page_title="RAG Chatbot")
-st.title("📚 RAG-based Chatbot with Gemini Pro")
+st.title("📚 RAG-based Question Answer Chatbot")
 
 uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
 
 if uploaded_file:
+    if not os.path.exists("data"):
+        os.makedirs("data")
     file_path = os.path.join("data", uploaded_file.name)
     with open(file_path, "wb") as f:
         f.write(uploaded_file.getbuffer())

@@ -3,11 +3,11 @@ import os
 import chromadb
 from langchain.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import GoogleGenerativeAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from dotenv import load_dotenv
 
 load_dotenv()
-google_api_key = os.getenv("AIzaSyDQjEWeProLWbE0dgDQScvRAvL23lFztmM")
+google_api_key = os.getenv("GOOGLE_API_KEY")
 
 def load_and_embed(pdf_path):
     loader = PyMuPDFLoader(pdf_path)

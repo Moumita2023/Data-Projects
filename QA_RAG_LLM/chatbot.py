@@ -2,9 +2,9 @@
 import os
 from dotenv import load_dotenv
 from langchain.vectorstores import Chroma
-from langchain.embeddings import GoogleGenerativeAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.chains import RetrievalQA
-from langchain.chat_models import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 load_dotenv()
 google_api_key = os.getenv("GOOGLE_API_KEY")
