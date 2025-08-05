@@ -4373,6 +4373,35 @@ thing
         self.assertEqual(bool(regex.match(r'\d', '\uFF19')), True)
         self.assertEqual(bool(regex.match(r'(?a:\d)', '\uFF19')), False)
 
+        # Git issue 575: Issues with ASCII/Unicode modifiers
+        self.assertEqual(regex.findall('\\d', '9\uFF19'), ['9', '\uff19'])
+        self.assertEqual(regex.findall('(?u:\\d)', '9\uFF19'), ['9', '\uff19'])
+        self.assertEqual(regex.findall('(?a:\\d)', '9\uFF19'), ['9'])
+
+        self.assertEqual(regex.findall('\\d', '9\uFF19', flags=regex.U), ['9', '\uff19'])
+        self.assertEqual(regex.findall('(?u:\\d)', '9\uFF19', flags=regex.U), ['9', '\uff19'])
+        self.assertEqual(regex.findall('(?a:\\d)', '9\uFF19', flags=regex.U), ['9'])
+
+        self.assertEqual(regex.findall('\\d', '9\uFF19', flags=regex.A), ['9'])
+        self.assertEqual(regex.findall('(?u:\\d)', '9\uFF19', flags=regex.A), ['9', '\uff19'])
+        self.assertEqual(regex.findall('(?a:\\d)', '9\uFF19', flags=regex.A), ['9'])
+
+        self.assertEqual(len(regex.findall(r'\p{L}', ''.join(chr(c) for c in range(0x100)), flags=0)), 117)
+        self.assertEqual(len(regex.findall(r'\p{L}', ''.join(chr(c) for c in range(0x100)), flags=regex.A)), 52)
+        self.assertEqual(len(regex.findall(r'\p{L}', ''.join(chr(c) for c in range(0x100)), flags=regex.U)), 117)
+
+        self.assertEqual(len(regex.findall(r'(?a:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=0)), 52)
+        self.assertEqual(len(regex.findall(r'(?a:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=regex.A)), 52)
+        self.assertEqual(len(regex.findall(r'(?a:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=regex.U)), 52)
+
+        self.assertEqual(len(regex.findall(r'(?u:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=0)), 117)
+        self.assertEqual(len(regex.findall(r'(?u:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=regex.A)), 117)
+        self.assertEqual(len(regex.findall(r'(?u:\p{L})', ''.join(chr(c) for c in range(0x100)), flags=regex.U)), 117)
+
+        # Git issue 580: Regression in v2025.7.31: \P{L} no longer matches in simple patterns
+        self.assertEqual(bool(regex.match(r"\A\P{L}?\p{L}", "hello,")), True)
+        self.assertEqual(bool(regex.fullmatch(r"\A\P{L}*(?P<w>\p{L}+)\P{L}*\Z", "hello,")), True)
+
     def test_fuzzy_ext(self):
         self.assertEqual(bool(regex.fullmatch(r'(?r)(?:a){e<=1:[a-z]}', 'e')),
           True)
