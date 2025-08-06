@@ -1,10 +1,16 @@
 #Load PDF, Chunk, Embed, Store
+import asyncio
 import os
 import chromadb
-from langchain.document_loaders import PyMuPDFLoader
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from dotenv import load_dotenv
+
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 
 load_dotenv()
 google_api_key = os.getenv("GOOGLE_API_KEY")

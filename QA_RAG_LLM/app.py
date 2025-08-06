@@ -1,4 +1,10 @@
 # Streamlit UI code for a Retrieval-Augmented Generative AI Chatbot
+import asyncio
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+    
 import streamlit as st
 import os
 from retriever import load_and_embed
@@ -13,11 +19,13 @@ if uploaded_file:
     if not os.path.exists("data"):
         os.makedirs("data")
     file_path = os.path.join("data", uploaded_file.name)
+    # Remove the file if it already exists
+    if os.path.exists(file_path):
+        os.remove(file_path)
     with open(file_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
     st.success("Uploaded successfully!")
     load_and_embed(file_path)
-    st.info("Embedding and vector store created!")
 
 st.markdown("---")
 

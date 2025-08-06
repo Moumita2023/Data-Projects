@@ -1,7 +1,7 @@
 #Retrieval-Augmented QA Logic
 import os
 from dotenv import load_dotenv
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.chains import RetrievalQA
 from langchain_google_genai import ChatGoogleGenerativeAI
