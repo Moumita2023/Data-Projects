@@ -14,7 +14,7 @@ def get_qa_chain():
     db = Chroma(persist_directory="./vectorstore", embedding_function=embeddings)
     retriever = db.as_retriever()
 
-    llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3, google_api_key=google_api_key)
+    llm = ChatGoogleGenerativeAI(model="models/gemini-1.5-pro", temperature=0.3, google_api_key=google_api_key)
 
     chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever, chain_type="stuff")
     return chain
