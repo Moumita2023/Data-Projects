@@ -9,7 +9,7 @@ This repository contains all the source files, including Tableau `.twbx` files, 
 ### Folder Structure:
 - **Data Visualization-Tableau Dashboards**: Contains all Tableau workbook files and related resources.
 - **Data Visualization Power BI dashboards**: Contains all Power BI report files and related resources.
-- **Machine Learning & Python Projects**: Contains all python and machine learning model, Orange Data Mining personal and academic projects
+- **Machine Learning & Python Projects**: Contains all python and machine learning model personal projects
 
 ## Tableau Dashboard
 
