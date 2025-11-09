@@ -56,5 +56,5 @@ Here are some key insights from the Power BI Amazon sales & Revenue Dashboard:
 I believe these are some interesting insights the organization should consider to increase the Sales & Revenues.
 ---
 
-If you have any questions, or if you'd like to collaborate or give feedback, feel free to contact me directly at LinkedIn(https://www.linkedin.com/in/patra-moumita/) or (https://www.linkedin.com/in/patra-moumita/?locale=fr_FR) or mail me at patra.mou2022@gmail.com
+If you have any questions, or if you'd like to collaborate or give feedback, feel free to contact me directly at LinkedIn(https://www.linkedin.com/in/patra-moumita/) or mail me at patra.mou2022@gmail.com
 
