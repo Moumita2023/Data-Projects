@@ -56,5 +56,49 @@ Here are some key insights from the Power BI Amazon sales & Revenue Dashboard:
 I believe these are some interesting insights the organization should consider to increase the Sales & Revenues.
 ---
 
-If you have any questions, or if you'd like to collaborate or give feedback, feel free to contact me directly at LinkedIn(https://www.linkedin.com/in/patra-moumita/) or (https://www.linkedin.com/in/patra-moumita/?locale=fr_FR) or mail me at patra.mou2022@gmail.com
+### Machine Learning & Python Projects: 
+Here are the machiner learning model based projects, EDA and the details of those-
+
+#### 1. Heart Attack EDA & Prediction : 
+**Objective**: Currently, heart strokes are very common even for young generation or the middle aged group such as 40-50. Heart strokes (also known as cerebrovascular accidents) occur due to disruptions in blood flow to the brain. 
+Predicting the risk of strokes helps in early intervention and prevention. 
+**Outcome**: In this project, the analysis of the various factors will be analysed to understand if any precaution, lifestyle changes, regular checkups can be taken into account to avoid a sudden loss.
+
+**Skills Demonstrated:** Python, Pandas, NumPy, Matplotlib, Seaborn, RandomForestClassifier, Data Cleaning, EDA, Predictive Modeling.
+
+#### 2. Superstore Sales EDA & Prediction with XGBoost
+**Objective:**  
+Forecast sales (order volumes / product demand) using the Superstore Sales dataset.
+
+**Outcome:**  
+- Provide business insights to optimize operational planning.  
+- Improve customer retention strategies.
+
+**Project Steps:**  
+1. Load and explore the dataset  
+2. Clean and prepare the data  
+3. Perform Exploratory Data Analysis (EDA)  
+4. Predict sales using XGBoost  
+5. Perform customer churn analysis  
+
+**Skills Demonstrated:** Python, Pandas, NumPy, Matplotlib, Seaborn, XGBoost, Data Cleaning, EDA, Predictive Modeling.
+
+#### 3. Sales Marketing Campaign Impact EDA
+**Objective:**  
+Evaluate the impact of a marketing campaign on sales data.
+
+**Outcome:**  
+- Understand which strategies influenced sales the most.  
+- Draw actionable business conclusions.
+
+**Project Steps:**  
+1. Load and explore the dataset  
+2. Perform Exploratory Data Analysis (EDA)  
+3. Visualize trends and patterns  
+4. Derive business insights  
+
+**Skills Demonstrated:** Python, Pandas, Matplotlib, Seaborn, EDA, Data Visualization, Business Analysis.
+
+
+If you have any questions, or if you'd like to collaborate or give feedback, feel free to contact me directly at LinkedIn(https://www.linkedin.com/in/patra-moumita/) or mail me at patra.mou2022@gmail.com
 
