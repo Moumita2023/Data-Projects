@@ -18,8 +18,8 @@ You can explore the interactive Tableau dashboards by visiting the live site hos
 
 #### Access the HR Employee Attrition Tableau Dashboard: Here are the dashboards available for viewing:
 
-- [HR Employee Attrition Dashboard](https://moumita2023.github.io/Data-Projects/)
-- [Amazon Sales & Revenue Dashboard](https://moumita2023.github.io/Data-Projects/)
+- [HR Employee Attrition Dashboard](https://public.tableau.com/views/HREmployeeAttritionDashboard_17430820912840/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Amazon Sales & Revenue Dashboard](https://public.tableau.com/views/TableauAmazonCustomerSalesDataAnalyticsReport/AmazonSalesRevenueDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 Click on the above links to directly view the respective dashboards.
 
