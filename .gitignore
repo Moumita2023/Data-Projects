@@ -3,3 +3,18 @@ venv/
 __pycache__/
 **/__pycache__/
 *.pyc
+
+# Data files - never commit raw data
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+
+# Power BI lock files
+*.pbix.lock
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
